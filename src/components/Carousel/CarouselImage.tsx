@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Carousel, CarouselControl, CarouselItem } from 'reactstrap';
+import { Carousel, CarouselItem } from 'reactstrap';
 import { CarouselImageItem } from '../../models/carousel/Carousel.model';
 import CustomCarouselControl from './CarouselCustomControl';
 import './CarouselImage.css';
@@ -10,12 +10,17 @@ interface CarouselImageProps {
 
 const CarouselImage = ({ items }: CarouselImageProps): JSX.Element => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const onSelectNextImage = () => {
+    if (isAnimating) return;
+
     setActiveIndex((prev) => (prev + 1) % items.length);
   };
 
   const onSelectPrevImage = () => {
+    if (isAnimating) return;
+
     if (activeIndex - 1 < 0) {
       setActiveIndex(items.length - 1);
       return;
@@ -23,9 +28,17 @@ const CarouselImage = ({ items }: CarouselImageProps): JSX.Element => {
     setActiveIndex((prev) => prev - 1);
   };
 
+  const onExiting = () => {
+    setIsAnimating(true);
+  };
+
+  const onExited = () => {
+    setIsAnimating(false);
+  };
+
   const slides = items.map((item) => {
     return (
-      <CarouselItem key={`carousel_image_${item.src}`}>
+      <CarouselItem onExiting={onExiting} onExited={onExited} key={`carousel_image_${item.src}`}>
         <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center' }}>
           <img
             style={{ height: '100%', maxHeight: '100%', width: 'auto' }}
@@ -42,8 +55,6 @@ const CarouselImage = ({ items }: CarouselImageProps): JSX.Element => {
       {slides}
       <CustomCarouselControl direction="prev" onClick={onSelectPrevImage} />
       <CustomCarouselControl direction="next" onClick={onSelectNextImage} />
-      {/* <CarouselControl direction="prev" onClickHandler={onSelectPrevImage} />
-      <CarouselControl direction="next" onClickHandler={onSelectNextImage} /> */}
     </Carousel>
   );
 };

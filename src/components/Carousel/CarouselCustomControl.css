@@ -35,7 +35,7 @@
   background: gray;
 }
 
-.carousel-custom-control-prev-icon:hover,
-.carousel-custom-control-next-icon:hover {
+.carousel-custom-control:hover .carousel-custom-control-prev-icon,
+.carousel-custom-control:hover .carousel-custom-control-next-icon {
   background: black;
 }
