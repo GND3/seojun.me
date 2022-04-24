@@ -39,12 +39,8 @@ const CarouselImage = ({ items }: CarouselImageProps): JSX.Element => {
   const slides = items.map((item) => {
     return (
       <CarouselItem onExiting={onExiting} onExited={onExited} key={`carousel_image_${item.src}`}>
-        <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center' }}>
-          <img
-            style={{ height: '100%', maxHeight: '100%', width: 'auto' }}
-            src={item.src}
-            alt={item.altText}
-          />
+        <div className="carousel-inner-image-container">
+          <img className="carousel-inner-image" src={item.src} alt={item.altText} />
         </div>
       </CarouselItem>
     );

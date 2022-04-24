@@ -1,0 +1,39 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-scrollable-area {
+  width: 100%;
+  max-width: 756px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-title {
+  margin-top: 20px;
+}
+
+.carousel-image-container {
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+}
+
+.date-area {
+  margin-top: 30px;
+}
+
+.closing-day {
+  font-size: 25px;
+}
+
+.d-day {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
