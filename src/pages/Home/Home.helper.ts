@@ -1,7 +1,6 @@
 import { CarouselImageItem } from '../../models/carousel/Carousel.model';
 
-export const IMAGE_TOTAL_AMOUNT = 21;
-
+// eslint-disable-next-line import/prefer-default-export
 export const CAROUSEL_IMAGE_LIST: CarouselImageItem[] = [
   {
     src: 'images/0.png',
