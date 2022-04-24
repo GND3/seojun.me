@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Carousel, CarouselControl, CarouselItem } from 'reactstrap';
 import { CarouselImageItem } from '../../models/carousel/Carousel.model';
+import CustomCarouselControl from './CarouselCustomControl';
+import './CarouselImage.css';
 
 interface CarouselImageProps {
   items: CarouselImageItem[];
@@ -24,7 +26,13 @@ const CarouselImage = ({ items }: CarouselImageProps): JSX.Element => {
   const slides = items.map((item) => {
     return (
       <CarouselItem key={`carousel_image_${item.src}`}>
-        <img style={{ width: '100%', height: '100%' }} src={item.src} alt={item.altText} />
+        <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center' }}>
+          <img
+            style={{ height: '100%', maxHeight: '100%', width: 'auto' }}
+            src={item.src}
+            alt={item.altText}
+          />
+        </div>
       </CarouselItem>
     );
   });
@@ -32,8 +40,10 @@ const CarouselImage = ({ items }: CarouselImageProps): JSX.Element => {
   return (
     <Carousel activeIndex={activeIndex} next={onSelectNextImage} previous={onSelectPrevImage}>
       {slides}
-      <CarouselControl direction="prev" directionText="다음" onClickHandler={onSelectPrevImage} />
-      <CarouselControl direction="next" directionText="이전" onClickHandler={onSelectNextImage} />
+      <CustomCarouselControl direction="prev" onClick={onSelectPrevImage} />
+      <CustomCarouselControl direction="next" onClick={onSelectNextImage} />
+      {/* <CarouselControl direction="prev" onClickHandler={onSelectPrevImage} />
+      <CarouselControl direction="next" onClickHandler={onSelectNextImage} /> */}
     </Carousel>
   );
 };

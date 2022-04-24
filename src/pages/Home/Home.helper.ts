@@ -4,18 +4,87 @@ export const IMAGE_TOTAL_AMOUNT = 21;
 
 export const CAROUSEL_IMAGE_LIST: CarouselImageItem[] = [
   {
-    src:
-      'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: 'images/0.png',
     altText: 'seojun image 1',
   },
   {
-    src:
-      'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: 'images/1.jpeg',
     altText: 'seojun image 2',
   },
   {
-    src:
-      'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: 'images/2.jpeg',
     altText: 'seojun image 3',
+  },
+  {
+    src: 'images/3.jpeg',
+    altText: 'seojun image 4',
+  },
+  {
+    src: 'images/4.jpeg',
+    altText: 'seojun image 5',
+  },
+  {
+    src: 'images/5.jpeg',
+    altText: 'seojun image 6',
+  },
+  {
+    src: 'images/6.jpeg',
+    altText: 'seojun image 7',
+  },
+  {
+    src: 'images/7.jpeg',
+    altText: 'seojun image 8',
+  },
+  {
+    src: 'images/8.jpeg',
+    altText: 'seojun image 9',
+  },
+  {
+    src: 'images/9.jpeg',
+    altText: 'seojun image 10',
+  },
+  {
+    src: 'images/10.jpeg',
+    altText: 'seojun image 11',
+  },
+  {
+    src: 'images/11.jpeg',
+    altText: 'seojun image 12',
+  },
+  {
+    src: 'images/12.jpeg',
+    altText: 'seojun image 13',
+  },
+  {
+    src: 'images/13.jpeg',
+    altText: 'seojun image 14',
+  },
+  {
+    src: 'images/14.jpeg',
+    altText: 'seojun image 15',
+  },
+  {
+    src: 'images/15.jpeg',
+    altText: 'seojun image 16',
+  },
+  {
+    src: 'images/16.jpeg',
+    altText: 'seojun image 17',
+  },
+  {
+    src: 'images/17.jpeg',
+    altText: 'seojun image 18',
+  },
+  {
+    src: 'images/18.jpeg',
+    altText: 'seojun image 19',
+  },
+  {
+    src: 'images/19.jpeg',
+    altText: 'seojun image 20',
+  },
+  {
+    src: 'images/20.jpeg',
+    altText: 'seojun image 21',
   },
 ];
