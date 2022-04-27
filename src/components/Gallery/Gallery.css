@@ -22,11 +22,11 @@
 .open_kakao_link {
   margin-top: 8px;
   font-size: 14px;
-  color: gray;
   text-decoration: none;
+  color: gray;
 }
 
-.open_kakao_link:visited {
+.open_kakao_link:link {
   color: gray;
 }
 

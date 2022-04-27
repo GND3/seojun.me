@@ -28,7 +28,7 @@
   text-decoration: none;
   color: black;
 }
-.link_text:visited {
+.link_text:link {
   color: black;
 }
 .divider {

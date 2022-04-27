@@ -64,9 +64,7 @@
   color: black;
 }
 
-.tel_btn:visited,
-.tel_btn:active,
-.tel_btn:focus {
+.tel_btn:link {
   color: black;
 }
 
