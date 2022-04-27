@@ -9,6 +9,8 @@ const DonationParagraph = (): JSX.Element => {
     if (!document) return;
 
     const textarea = document.createElement('textarea');
+    textarea.style.position = 'fixed';
+    textarea.style.visibility = 'hidden';
     textarea.value = BANK_ACCOUNT; // 복사할 메시지
     document.body.appendChild(textarea);
     textarea.select();
