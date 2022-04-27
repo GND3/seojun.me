@@ -1,0 +1,35 @@
+.gallery_area {
+  width: 100%;
+  display: flex;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery_area_title {
+  font-size: 20;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carousel-image-container {
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+}
+
+.open_kakao_link {
+  margin-top: 8px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+.open_kakao_link:visited {
+  color: gray;
+}
+
+.open_kakao_link_icon {
+  font-size: 20px;
+}

@@ -1,0 +1,16 @@
+.floating_btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: lightskyblue;
+  border: 2px skyblue solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow_up_icon {
+  width: 60px;
+  height: 60px;
+  stroke: white;
+}

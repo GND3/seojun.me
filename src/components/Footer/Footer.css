@@ -1,0 +1,36 @@
+.footer_container {
+  margin-top: 100px;
+  width: 100%;
+  height: 180px;
+  background-color: lightgray;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.copyright_text {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.contact_title {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.link_text {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.link_text:visited {
+  color: black;
+}
+.divider {
+  color: darkgray;
+}
