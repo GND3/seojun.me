@@ -10,7 +10,7 @@ const PlaceTimeParagraph = (): JSX.Element => {
   const goToNaverMap = () => {
     if (typeof window === 'undefined') return;
 
-    window.open(PARTY_PLACE_NAVER_MAP_URL);
+    window.location.href = PARTY_PLACE_NAVER_MAP_URL;
   };
 
   return (
