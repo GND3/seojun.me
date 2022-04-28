@@ -4,28 +4,28 @@ import { GITHUB_LINK } from './Footer.helper';
 
 export const Footer = (): JSX.Element => {
   const getContributerContainerClassName = (idx: number): string => {
-    const baseClassName = 'contributer_container';
+    const baseClassName = 'contributor_container';
     return idx !== 0 ? `${baseClassName} left_space` : baseClassName;
   };
   return (
     <div className="footer_container">
       <div>
-        <span style={{ fontSize: '16px', fontWeight: '600' }}>Contributors</span>
-        <div className="contributer_container_box">
+        <span className="contributor_section_title">Contributors</span>
+        <div className="contributor_container_box">
           {contributors.map((contributor, idx) => (
             <div key={contributor.name} className={getContributerContainerClassName(idx)}>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href={contributor.link}
-                className="contributer_link"
+                className="contributor_link"
               >
                 <img
                   src={contributor.profileImage.src}
                   alt={contributor.profileImage.alt}
-                  className="contributer_profile_img"
+                  className="contributor_profile_img"
                 />
-                <span className="contributer_name">{contributor.name}</span>
+                <span className="contributor_name">{contributor.name}</span>
               </a>
             </div>
           ))}
