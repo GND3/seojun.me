@@ -71,7 +71,7 @@ const contributors: Contributor[] = [
     name: '최규민',
     link: 'https://www.linkedin.com/in/%EA%B7%9C%EB%AF%BC-%EC%B5%9C-779b9a1ba',
     profileImage: {
-      src: 'images/gyum.jpeg',
+      src: 'images/gyum.png',
       alt: '귺',
     },
   },
