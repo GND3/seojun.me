@@ -1,16 +1,25 @@
 .floating_btn {
-  width: 70px;
-  height: 70px;
+  width: 56px;
+  height: 56px;
   border-radius: 35px;
-  background-color: lightskyblue;
-  border: 2px skyblue solid;
+  background-color: #337fff;
+  border: 2px #337fff solid;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 6px 10px 0px,
+    rgb(0 0 0 / 12%) 0px 1px 18px 0px;
+  transition: 0.3s;
+}
+
+.floating_btn:hover {
+  opacity: 1;
+  background-color: #2362d0;
+  border: 2px #2362d0 solid;
 }
 
 .arrow_up_icon {
-  width: 60px;
-  height: 60px;
+  width: 25px;
+  height: 25px;
   stroke: white;
 }

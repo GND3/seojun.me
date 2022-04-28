@@ -24,6 +24,10 @@
   background-color: transparent;
 }
 
+.bank_account_btn:hover {
+  /* color: #337fff; */
+  background: #efefef;
+}
 .bank_account_copy_desc {
   font-size: 12px;
   color: lightgray;

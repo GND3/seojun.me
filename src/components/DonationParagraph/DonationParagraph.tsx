@@ -25,7 +25,7 @@ const DonationParagraph = (): JSX.Element => {
     if (!isCopied) return () => ({});
     const timer = setTimeout(() => {
       setIsCopied(false);
-    }, 60000);
+    }, 1000);
 
     return () => {
       clearTimeout(timer);
