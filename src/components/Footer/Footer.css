@@ -18,6 +18,7 @@
 .copyright_text {
   font-size: 12px;
   font-weight: 400;
+  margin-top: 8px;
 }
 
 .contact_title {
@@ -36,4 +37,36 @@
 }
 .divider {
   color: darkgray;
+}
+
+.contributer_profile_img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.contributer_name {
+  font-weight: 300;
+  font-size: 9px;
+  color: gray;
+}
+
+.contributer_container_box {
+  display: flex;
+  margin-top: 4px;
+}
+
+.contributer_container {
+}
+
+.left_space {
+  margin-left: 9px;
+}
+
+.contributer_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
