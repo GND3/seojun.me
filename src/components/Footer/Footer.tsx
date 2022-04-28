@@ -49,7 +49,10 @@ const contributors: Contributor[] = [
     name: '김영진',
     link: 'https://www.linkedin.com/in/%EC%98%81%EC%A7%84-%EA%B9%80-a35719128',
     profileImage: {
-      src: 'https://media-exp1.licdn.com/dms/image/C5603AQHC_55yvOrdpA/profile-displayphoto-shrink_100_100/0/1609808924420?e=1656547200&v=beta&t=2gmFON01hGOCqJeg_VqZI56R2jQ37X8VkZ8NcncPfMI',
+      src:
+        'https://media-exp1.licdn.com/dms/image/C5603AQHC_55yvOrdpA/' +
+        'profile-displayphoto-shrink_100_100/0/1609808924420?e=1656547200' +
+        '&v=beta&t=2gmFON01hGOCqJeg_VqZI56R2jQ37X8VkZ8NcncPfMI',
       alt: '앵',
     },
   },
@@ -57,7 +60,10 @@ const contributors: Contributor[] = [
     name: '김예찬',
     link: 'https://www.linkedin.com/in/yae-chan-kim-41a962198/',
     profileImage: {
-      src: 'https://media-exp1.licdn.com/dms/image/C5603AQHQKV8EakE6PQ/profile-displayphoto-shrink_100_100/0/1609491928861?e=1656547200&v=beta&t=o9THjuFy7S6YS__0mVifAsaAJ_2z59Rbdys-EwqqYno',
+      src:
+        'https://media-exp1.licdn.com/dms/image/C5603AQHQKV8EakE6PQ/' +
+        'profile-displayphoto-shrink_100_100/0/1609491928861' +
+        '?e=1656547200&v=beta&t=o9THjuFy7S6YS__0mVifAsaAJ_2z59Rbdys-EwqqYno',
       alt: '엨',
     },
   },
