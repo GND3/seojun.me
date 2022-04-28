@@ -26,7 +26,8 @@
   color: gray;
 }
 
-.open_kakao_link:link {
+.open_kakao_link:link,
+.open_kakao_link:hover {
   color: gray;
 }
 

@@ -31,7 +31,8 @@
   text-decoration: none;
   color: black;
 }
-.link_text:link {
+.link_text:link,
+.link_text:hover {
   color: black;
 }
 .divider {
