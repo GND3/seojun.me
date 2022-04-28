@@ -7,24 +7,20 @@ import { CLOSING_DAY, PARTY_PLACE, PARTY_PLACE_NAVER_MAP_URL } from './PlaceTime
 import './PlaceTimeParagraph.css';
 
 const PlaceTimeParagraph = (): JSX.Element => {
-  const goToNaverMap = () => {
-    if (typeof window === 'undefined') return;
-
-    window.location.href = PARTY_PLACE_NAVER_MAP_URL;
-  };
-
   return (
     <div className="place_time_paragraph">
       <h2 className="place_time_paragraph_title">언제 어디서?</h2>
       <span className="closing-day">{format(CLOSING_DAY, 'yyyy. MM. dd (eee) HH : mm')}</span>
       <span className="d-day">👉 D{differenceInDays(new Date(), CLOSING_DAY)}</span>
       <span className="place_text">{PARTY_PLACE}</span>
-      <img
-        className="place_img"
-        src="/images/party_place.png"
-        alt="party place map img"
-        onClick={goToNaverMap}
-      />
+      <a
+        className="place_img_link"
+        target="_blank"
+        rel="noreferrer"
+        href={PARTY_PLACE_NAVER_MAP_URL}
+      >
+        <img className="place_img" src="/images/party_place.png" alt="party place map img" />
+      </a>
       <span className="img_desc">이미지 클릭시 네이버 지도 앱/웹으로 이동</span>
     </div>
   );
