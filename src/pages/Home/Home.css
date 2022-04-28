@@ -64,6 +64,10 @@
   color: black;
 }
 
+.tel_btn:hover {
+  background-color: #eeeeee;
+}
+
 .tel_btn:link {
   color: black;
 }
