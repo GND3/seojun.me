@@ -8,7 +8,7 @@ export const Footer = (): JSX.Element => {
       <div className="copyright_text">Copyrights © 2022 GND3 all rights reserved.</div>
       <div className="link_area">
         <span className="contact_title">Contact : </span>
-        <a className="link_text" href={GITHUB_LINK}>
+        <a className="link_text" target="_blank" rel="noreferrer" href={GITHUB_LINK}>
           Github
         </a>
         <span className="divider"> | </span>
