@@ -11,6 +11,12 @@
   margin-bottom: 40px;
 }
 
+.strong{
+  font-size: 19px;
+  font-weight: bold;
+  color: #0385ff;
+}
+
 .open_paragraph_text {
   font-size: 18px;
   font-weight: 300;

@@ -31,7 +31,7 @@
 }
 
 .emphasize {
-  color: #337fff;
+  color: #0385ff;
   font-weight: bold;
 }
 
@@ -48,7 +48,7 @@
 .warning {
   font-size: 22px;
   font-weight: bold;
-  color: red;
+  color: #0385ff;
   margin-top: 55px;
 }
 
