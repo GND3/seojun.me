@@ -14,7 +14,7 @@ const Gallery = (): JSX.Element => {
         className="open_kakao_link"
         target="_blank"
         rel="noreferrer"
-        href="https://open.kakao.com/o/gYjxcqde"
+        href="https://open.kakao.com/o/g4atL9jf"
       >
         <span className="open_kakao_link_icon">👉</span> 사진 후원 오카방 바로가기
       </a>
