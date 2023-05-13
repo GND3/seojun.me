@@ -9,10 +9,10 @@ const CelebrateParagraph = (): JSX.Element => {
       </div>
       <img className="sloth_img" src="/images/sloth.png" alt="sloth img" />
       <div className="celebrate_paragraph_text_area">
-        <span className="celebrate_text">무지성으로 살아도</span>
-        <span className="celebrate_text">주변 사람들은 잘 챙겨라</span>
-        <span className="celebrate_text">객꿀따리 객꿀따</span>
-        <span className="celebrate_text">GND3 {'<박서준이여>'}</span>
+        <span className="celebrate_text">제 아무리 무지성으로 살아도</span>
+        <span className="celebrate_text">이런 날은 잘 챙기는구나</span>
+        <span className="celebrate_text">행복하자</span>
+        <span className="celebrate_text">From. GND3</span>
       </div>
     </div>
   );

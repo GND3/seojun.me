@@ -30,7 +30,7 @@ export const Footer = (): JSX.Element => {
             </div>
           ))}
         </div>
-        <div className="copyright_text">Copyrights © 2022 GND3 all rights reserved.</div>
+        <div className="copyright_text">Copyrights © 2023 GND3 all rights reserved.</div>
         <div className="link_area">
           <span className="contact_title">Contact : </span>
           <a className="link_text" target="_blank" rel="noreferrer" href={GITHUB_LINK}>
@@ -49,30 +49,24 @@ const contributors: Contributor[] = [
     name: '김영진',
     link: 'https://www.linkedin.com/in/%EC%98%81%EC%A7%84-%EA%B9%80-a35719128',
     profileImage: {
-      src:
-        'https://media-exp1.licdn.com/dms/image/C5603AQHC_55yvOrdpA/' +
-        'profile-displayphoto-shrink_100_100/0/1609808924420?e=1656547200' +
-        '&v=beta&t=2gmFON01hGOCqJeg_VqZI56R2jQ37X8VkZ8NcncPfMI',
-      alt: '앵',
+      src: 'images/angjin.jpeg',
+      alt: '앵진',
     },
   },
   {
     name: '김예찬',
     link: 'https://www.linkedin.com/in/yae-chan-kim-41a962198/',
     profileImage: {
-      src:
-        'https://media-exp1.licdn.com/dms/image/C5603AQHQKV8EakE6PQ/' +
-        'profile-displayphoto-shrink_100_100/0/1609491928861' +
-        '?e=1656547200&v=beta&t=o9THjuFy7S6YS__0mVifAsaAJ_2z59Rbdys-EwqqYno',
-      alt: '엨',
+      src: 'images/yeachan.jpeg',
+      alt: '엨찬',
     },
   },
   {
     name: '최규민',
     link: 'https://www.linkedin.com/in/%EA%B7%9C%EB%AF%BC-%EC%B5%9C-779b9a1ba',
     profileImage: {
-      src: 'images/gyum.png',
-      alt: '귺',
+      src: 'images/gyumnnii.jpeg',
+      alt: '귺민',
     },
   },
 ];

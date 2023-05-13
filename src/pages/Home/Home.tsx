@@ -56,7 +56,7 @@ const Home = (): JSX.Element => {
         <DonationParagraph />
         {/* 연락처 버튼 */}
         <a className="tel_btn" href="tel:01030608922">
-          <span>📞 서준이에게 연락하기</span>
+          <span>📞 박서준에게 전화하기</span>
         </a>
         {/* 캐로셀 갤러리 */}
         <Gallery />
