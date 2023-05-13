@@ -1,51 +1,51 @@
-name: seojun.me CI-CD
+# name: seojun.me CI-CD
 
-# github secrets
-# 1. AWS_ACCESS_KEY_ID: s3에 접근하기 위한 aws access key id
-# 2. AWS_SECRET_ACCESS_KEY: s3에 접근하기 위한 aws access key id
-# 3. AWS_DEFAULT_REGION: s3 aws region
+# # github secrets
+# # 1. AWS_ACCESS_KEY_ID: s3에 접근하기 위한 aws access key id
+# # 2. AWS_SECRET_ACCESS_KEY: s3에 접근하기 위한 aws access key id
+# # 3. AWS_DEFAULT_REGION: s3 aws region
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
-  workflow_dispatch:
+#   workflow_dispatch:
 
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+# jobs:
+#   build-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
 
-      - name: setup node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
+#       - name: setup node.js
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: 16
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+#       - name: Get yarn cache directory path
+#         id: yarn-cache-dir-path
+#         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - uses: actions/cache@v2
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+#       - uses: actions/cache@v2
+#         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+#         with:
+#           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+#           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+#           restore-keys: |
+#             ${{ runner.os }}-yarn-
 
-      - name: Install project dependencies
-        run: yarn --prefer-offline
+#       - name: Install project dependencies
+#         run: yarn --prefer-offline
 
-      - name: run yarn build
-        id: run_yarn_build
-        run: yarn build
+#       - name: run yarn build
+#         id: run_yarn_build
+#         run: yarn build
 
-      - name: run yarn deploy
-        id: run_yarn_deploy
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-        run: yarn deploy
+#       - name: run yarn deploy
+#         id: run_yarn_deploy
+#         env:
+#           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+#         run: yarn deploy
