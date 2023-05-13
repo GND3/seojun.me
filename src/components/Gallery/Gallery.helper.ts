@@ -3,7 +3,7 @@ import { CarouselImageItem } from '../../models/carousel/Carousel.model';
 // eslint-disable-next-line import/prefer-default-export
 export const CAROUSEL_IMAGE_LIST: CarouselImageItem[] = [
   {
-    src: 'images/0.png',
+    src: 'images/0.jpeg',
     altText: 'seojun image 1',
   },
   {
@@ -49,41 +49,5 @@ export const CAROUSEL_IMAGE_LIST: CarouselImageItem[] = [
   {
     src: 'images/11.jpeg',
     altText: 'seojun image 12',
-  },
-  {
-    src: 'images/12.jpeg',
-    altText: 'seojun image 13',
-  },
-  {
-    src: 'images/13.jpeg',
-    altText: 'seojun image 14',
-  },
-  {
-    src: 'images/14.jpeg',
-    altText: 'seojun image 15',
-  },
-  {
-    src: 'images/15.jpeg',
-    altText: 'seojun image 16',
-  },
-  {
-    src: 'images/16.jpeg',
-    altText: 'seojun image 17',
-  },
-  {
-    src: 'images/17.jpeg',
-    altText: 'seojun image 18',
-  },
-  {
-    src: 'images/18.jpeg',
-    altText: 'seojun image 19',
-  },
-  {
-    src: 'images/19.jpeg',
-    altText: 'seojun image 20',
-  },
-  {
-    src: 'images/20.jpeg',
-    altText: 'seojun image 21',
   },
 ];
